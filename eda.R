@@ -6,7 +6,7 @@ library(tidyverse)
 
 data <- read_csv("fev1.csv")
 
-...$id <- factor(...$id)
+data$id <- factor(data$id)
 
 # 3a. correlation
 
