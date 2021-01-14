@@ -8,10 +8,14 @@ data <- read_csv("fev1.csv")
 
 data$id <- factor(data$id)
 
+summary(data)
+
 # 3a. correlation
 
 # for tidyverse users...
-summarise(..., r = ...)
+# summarise(data, r = ...)
+cor.test(data$age, data$FEV1)
+plot(data$age, data$FEV1)
 # but there are many ways to get this answer
 
 # Answer: <discuss linear model assumption>
