@@ -22,10 +22,11 @@ plot(data$age, data$FEV1)
 
 # 3b. make a scatter plot
 
-ggplot(data = ..., aes(x = ...,
-                       y = ...)) +
+ggplot(data = data, aes(x = age,
+                       y = FEV1)) +
     geom_point() +
-    xlab(...) + ...
+    xlab('Age') + ylab('FEV1') +
+  theme_bw()
 
 # Answer: <discuss linear model assumption>
 
