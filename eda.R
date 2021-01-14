@@ -26,13 +26,16 @@ ggplot(data = data, aes(x = age,
                        y = FEV1)) +
     geom_point() +
     xlab('Age') + ylab('FEV1') +
-  theme_bw()
+    theme_bw()
 
 # Answer: <discuss linear model assumption>
 
 # E3c. outliers
 
-# hint: do groupwise calculation of r and then filter/subset 
+# hint: do groupwise calculation of r and then filter/subset
+data %>%
+  group_by(id) %>%
+  summarise(age,mean(FEV1))
 
 ## Answer: <why would r < 0?>
 
