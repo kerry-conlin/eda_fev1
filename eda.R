@@ -4,7 +4,7 @@ library(tidyverse)
 
 # 2. loading data
 
-...    <- read_csv("fev1.csv")
+data <- read_csv("fev1.csv")
 
 ...$id <- factor(...$id)
 
